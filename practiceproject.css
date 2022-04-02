@@ -1,0 +1,99 @@
+*{
+   margin: 0px;
+   padding: 0px;
+  } 
+  
+  .container{
+    display: flex;
+    height: 100vh;
+   width: 100%;
+   background-size: cover;
+   overflow: hidden;
+   } 
+   .city img{
+    bottom: 0px; top: 0%;
+   height: 490px; width: 100%;
+    position: absolute; z-index: 5;
+    animation: road 2s linear infinite;
+   } 
+   
+   .city2 img{
+    bottom: 0px; top: 0%;
+   height: 490px; width: 100%;
+    position: absolute; z-index: 5;
+   } 
+   .road img{
+    bottom: 0;  left: 0; right: 0;
+   height: 170px; width: 100%;
+    position: absolute; z-index: 5;
+    animation: road 0.8s linear infinite;
+    z-index: 2;
+   } 
+   
+   @keyframes road{
+    100%{
+     transform: translate(-160px);
+    } 
+  } 
+
+  .road2 img{
+    bottom: 0;  left: 0; right: 0;
+   height: 170px; width: 100%;
+    position: absolute; z-index: 5;
+    z-index: 0;
+   
+   } 
+
+  .car img{
+    bottom: 20px;  left: 30%; right: 0;
+   height: 90px; 
+    position: absolute; z-index: 5;
+    
+    z-index: 4;
+   
+   } 
+   .car2 img{
+    bottom: 100px;  left: 20%; right: 0;
+   height: 50px;  width: 15%;
+    position: absolute; z-index: 5;
+    
+    z-index: 3;
+   
+   } 
+  
+   .frontwheel{
+   width: 2.4%;
+    height: 15.2px; left: 430px; bottom: 5.5vh;
+   position: absolute; z-index: 20; 
+   animation: wheel 4s linear infinite;
+
+   } 
+  .backwheel {
+    width: 2.4%; 
+    height: 15.2px; left: 560px; bottom: 5.5vh;
+   position: absolute; z-index: 50; 
+   animation: wheel 4s linear infinite;
+
+   } 
+   .frontwheel3{
+    width: 2%;
+     height: 8.2px; left: 299px; bottom: 16.5%;
+    position: absolute; z-index: 20; 
+    animation: wheel 4s linear infinite;
+ 
+    } 
+   .backwheel4 {
+     width: 2%; 
+     height: 16.2px; left: 425px; bottom: 15.5%;
+    position: absolute; z-index: 3; 
+    animation: wheel 4s linear infinite;
+ 
+    } 
+   @keyframes wheel{
+    100%{
+      transform: translateZ(150deg);
+    } 
+     100%{
+      transform: rotate(360deg);
+    } 
+  } 
